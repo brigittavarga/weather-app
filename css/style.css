@@ -133,12 +133,12 @@ h1 span {
 }
 
 .zurich {
-    background: url(/img/zurich.jpg);
+    background: url(../img/zurich.jpg);
     background-size: cover;
 }
 
 .lisbon {
-    background: url(/img/lisbon.jpg);
+    background: url(../img/lisbon.jpg);
     background-size: cover;
 }
 
