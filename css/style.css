@@ -1,0 +1,271 @@
+/*
+
+font-family: 'PT Mono', monospace;
+font-family: 'Work Sans', sans-serif;
+
+dark-beige: #f5e1da; 
+light-grey: #f1f1f1; 
+tourquiz: #49beb7; 
+dark-green: #085f63; 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5e1da; 
+    color: #085f63; 
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container {
+    margin: 3% auto 3% auto;
+    background-color: #fff;
+    max-width: 70%;
+    border-radius: 10px;
+    padding: 60px 120px;
+}
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+input,
+.container,
+.add-city,
+.city p {
+    box-shadow: 2px 2px 6px rgba(100, 100, 100, 0.1);
+}
+
+input {
+    padding: 12px 32px;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 223, 223);
+    font-family: 'Work Sans', sans-serif;
+    min-width: 300px;
+}
+
+.form-container {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    display: inline;
+}
+
+button[type="submit"] {
+    background-color: #49beb7;
+    color: #fff;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: -30px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: 'PT Mono', monospace;
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.day p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.city {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.city:hover {
+    cursor: pointer;
+}
+
+.city p {
+    color: #085f63;
+    font-size: 18px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    border-radius: 9px 9px 0 0;
+    border: 1px solid #f1f1f1;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+.tokyo {
+    background: url(/img/tokyo.jpg);
+    background-size: cover;
+}
+
+.zurich {
+    background: url(/img/zurich.jpg);
+    background-size: cover;
+}
+
+.lisbon {
+    background: url(/img/lisbon.jpg);
+    background-size: cover;
+}
+
+.add-city {
+    border: 1px solid #f1f1f1; 
+    box-shadow: 3px 3px 3px rgba(100, 100, 100, 0.1);
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.add-city:hover,
+.city:hover {
+    transform: translateY(-4px);
+}
+
+.overlay {
+    background-color: rgb(88, 88, 88);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.col .degree {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-icon {
+    max-width: 60px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 700px;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+small {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+small a {
+    text-decoration: none;
+    color: #085f63; 
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+-------- MEDIA QUERIES --------
+*/
+
+@media screen and (max-width: 1402px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .container {
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    h1,
+    h3,
+    .row {
+        text-align: center;
+    }
+    
+    .cities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .city {
+        margin-top: 40px;
+    }
+
+    .forecast-container {
+        flex-direction: column;
+    }
+
+
+    .forecast {
+        min-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 723px) {
+        
+    .day {
+        margin-top: 40px;
+    }
+
+    .weather-icon {
+        max-width: 120px;
+    }
+
+    .forecast {
+        flex-direction: column;
+        text-align: center;
+    }
+}

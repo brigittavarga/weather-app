@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <p class="heading">always remember: after rain comes sunshine 🌈</p>
+
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Search city..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <h1>Weather <span>Forecast</span></h1>
+
+        <div class="cities">
+
+            <div class="city zurich">
+                <div class="overlay"></div>
+                 <p>Zürich 🇨🇭</p>
+            </div>
+
+            <div class="city tokyo">
+                <div class="overlay"></div>
+                <p>Tokyo 🇯🇵</p>
+            </div>
+
+            <div class="city lisbon">
+                <div class="overlay"></div>
+                 <p>Lisbon 🇵🇹</p>
+
+            </div>
+
+            <div class="city add-city">
+                + add a city
+            </div>
+
+        </div> <!-- .cities -->
+
+        <h3>Zürich, Switzerland</h3>
+
+        <div class="forecast-container">
+
+        <div class="row">
+
+            <div class="col col-1">
+                <p class="degree">22°</p>
+                <p class="date">Friday 21:41</p>
+                <p>Clear</p>
+            </div>
+
+            <div class="col col-2">
+                <p class="precipitation">Precipitation: 69%</p>
+                <p class="wind">Wind: 3km/h</p>
+            </div>
+        </div> <!-- .row -->
+
+        <div class="forecast">
+
+            <div class="day saturday">
+                <p>Saturday</p>
+                <?xml version="1.0" ?><svg class="weather-icon" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #efcc00;
+                            }
+                
+                            .cls-2,
+                            .cls-5,
+                            .cls-6 {
+                                fill: none;
+                                stroke-linecap: round;
+                                stroke-miterlimit: 10;
+                                stroke-width: 3px;
+                            }
+                
+                            .cls-2 {
+                                stroke: #efcc00;
+                            }
+                
+                            .cls-3 {
+                                fill: url(#linear-gradient);
+                            }
+                
+                            .cls-4 {
+                                fill: url(#linear-gradient-2);
+                            }
+                
+                            .cls-5 {
+                                stroke: #a5a9aa;
+                            }
+                
+                            .cls-6 {
+                                stroke: #b9c1c6;
+                            }
+                        </style>
+                        <linearGradient gradientTransform="matrix(-1, 0, 0, 1, -970.2, 0)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient" x1="-989.28" x2="-1010.37" y1="52.39" y2="25.08">
+                            <stop offset="0" stop-color="#f2f2f2" />
+                            <stop offset="1" stop-color="#cfcfcf" />
+                        </linearGradient>
+                        <linearGradient gradientTransform="matrix(0, -1, -1, 0, -44.28, -1021.58)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient-2" x1="-1062.77" x2="-1051.15" y1="-96.39" y2="-78.75">
+                            <stop offset="0.02" stop-color="#fff" />
+                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <title />
+                    <circle class="cls-1" cx="39.8" cy="22" r="12.59" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="2" y2="6.44" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="37.56" y2="42" />
+                    <line class="cls-2" x1="19.8" x2="24.25" y1="22" y2="22" />
+                    <line class="cls-2" x1="55.36" x2="59.8" y1="22" y2="22" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="7.86" y2="11" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="33" y2="36.14" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="36.14" y2="33" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="11" y2="7.86" />
+                    <path class="cls-3"
+                        d="M23.5,15.9A17.49,17.49,0,0,1,39,25.22a13.75,13.75,0,1,1,6.92,25.62L23.5,50.9a17.5,17.5,0,0,1,0-35Z" />
+                    <circle class="cls-4" cx="45.89" cy="37.09" r="13.75" transform="translate(-2.18 71.3) rotate(-74.39)" />
+                    <line class="cls-5" x1="37.84" x2="48.06" y1="54.5" y2="54.5" />
+                    <line class="cls-6" x1="15.94" x2="32.74" y1="54.5" y2="54.5" />
+                    <line class="cls-5" x1="33.23" x2="44.55" y1="59.5" y2="59.5" />
+                    <line class="cls-5" x1="19.96" x2="27.65" y1="59.5" y2="59.5" />
+                </svg>
+
+                <p>20°</p>
+
+            </div> <!-- .day .saturday -->
+
+            <div class="day sunday">
+                <p>Sunday</p>
+               
+                <?xml version="1.0" ?><svg class="weather-icon" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #efcc00;
+                            }
+                
+                            .cls-2,
+                            .cls-5,
+                            .cls-6 {
+                                fill: none;
+                                stroke-linecap: round;
+                                stroke-miterlimit: 10;
+                                stroke-width: 3px;
+                            }
+                
+                            .cls-2 {
+                                stroke: #efcc00;
+                            }
+                
+                            .cls-3 {
+                                fill: url(#linear-gradient);
+                            }
+                
+                            .cls-4 {
+                                fill: url(#linear-gradient-2);
+                            }
+                
+                            .cls-5 {
+                                stroke: #a5a9aa;
+                            }
+                
+                            .cls-6 {
+                                stroke: #b9c1c6;
+                            }
+                        </style>
+                        <linearGradient gradientTransform="matrix(-1, 0, 0, 1, -970.2, 0)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient" x1="-989.28" x2="-1010.37" y1="52.39" y2="25.08">
+                            <stop offset="0" stop-color="#f2f2f2" />
+                            <stop offset="1" stop-color="#cfcfcf" />
+                        </linearGradient>
+                        <linearGradient gradientTransform="matrix(0, -1, -1, 0, -38.83, -981.76)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient-2" x1="-1022.95" x2="-1011.33" y1="-90.94" y2="-73.29">
+                            <stop offset="0.02" stop-color="#fff" />
+                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <title />
+                    <circle class="cls-1" cx="39.8" cy="22" r="12.59" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="2" y2="6.44" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="37.56" y2="42" />
+                    <line class="cls-2" x1="19.8" x2="24.25" y1="22" y2="22" />
+                    <line class="cls-2" x1="55.36" x2="59.8" y1="22" y2="22" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="7.86" y2="11" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="33" y2="36.14" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="36.14" y2="33" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="11" y2="7.86" />
+                    <path class="cls-3"
+                        d="M23.5,15.9A17.49,17.49,0,0,1,39,25.22a13.75,13.75,0,1,1,6.92,25.62L23.5,50.9a17.5,17.5,0,0,1,0-35Z" />
+                    <circle class="cls-4" cx="45.89" cy="37.09" r="13.75" transform="translate(-2.18 71.3) rotate(-74.39)" />
+                    <path class="cls-5"
+                        d="M43.53,46.5A2.5,2.5,0,0,1,46,49h0a2.5,2.5,0,0,1-2.5,2.5h-21a3,3,0,0,0-3,3h0a3,3,0,0,0,3,3H42.25a2,2,0,0,1,2,2v.08a2,2,0,0,1-2,2H40.5" />
+                    <path class="cls-6" d="M51.5,59.5a2,2,0,0,0,2-2h0a2,2,0,0,0-2-2h-4" />
+                </svg>
+
+                <p>18°</p>
+            
+            </div> <!-- .day .sunday -->
+
+            <div class="day monday">
+                <p>Monday</p>
+            
+                <?xml version="1.0" ?><svg class="weather-icon" data-name="Layer_1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #efcc00;
+                            }
+                
+                            .cls-2 {
+                                fill: none;
+                                stroke-linecap: round;
+                                stroke-miterlimit: 10;
+                                stroke-width: 3px;
+                            }
+                
+                            .cls-3 {
+                                fill: url(#linear-gradient);
+                            }
+                
+                            .cls-4 {
+                                fill: url(#linear-gradient-2);
+                            }
+                
+                            .cls-5 {
+                                fill: #0baeff;
+                            }
+                        </style>
+                        <linearGradient gradientTransform="matrix(-1, 0, 0, 1, -230.2, 0)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient" x1="-249.28" x2="-270.37" y1="52.39" y2="25.08">
+                            <stop offset="0" stop-color="#f2f2f2" />
+                            <stop offset="1" stop-color="#cfcfcf" />
+                        </linearGradient>
+                        <linearGradient gradientTransform="matrix(0, -1, -1, 0, 60.72, -255.41)" gradientUnits="userSpaceOnUse"
+                            id="linear-gradient-2" x1="-296.59" x2="-284.98" y1="8.61" y2="26.25">
+                            <stop offset="0.02" stop-color="#fff" />
+                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <title />
+                    <circle class="cls-1" cx="39.8" cy="22" r="12.59" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="2" y2="6.44" />
+                    <line class="cls-2" x1="39.8" x2="39.8" y1="37.56" y2="42" />
+                    <line class="cls-2" x1="19.8" x2="24.25" y1="22" y2="22" />
+                    <line class="cls-2" x1="55.36" x2="59.8" y1="22" y2="22" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="7.86" y2="11" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="33" y2="36.14" />
+                    <line class="cls-2" x1="25.66" x2="28.8" y1="36.14" y2="33" />
+                    <line class="cls-2" x1="50.8" x2="53.94" y1="11" y2="7.86" />
+                    <path class="cls-3"
+                        d="M23.5,15.9A17.49,17.49,0,0,1,39,25.22a13.75,13.75,0,1,1,6.92,25.62L23.5,50.9a17.5,17.5,0,0,1,0-35Z" />
+                    <circle class="cls-4" cx="45.89" cy="37.09" r="13.75" transform="translate(-2.18 71.3) rotate(-74.39)" />
+                    <path class="cls-5" d="M36.22,59.28a3.72,3.72,0,1,1-7.44,0c0-3.26,3-6.28,3.72-6.28S36.22,56,36.22,59.28Z" />
+                </svg>
+            
+                <p>22°</p>
+            
+            </div> <!-- .day .monday -->
+
+            <div class="day tuesday">
+                <p>Tuesday</p>
+            
+            <?xml version="1.0" ?><svg class="weather-icon" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #efcc00;
+                        }
+            
+                        .cls-2 {
+                            fill: none;
+                            stroke: #efcc00;
+                            stroke-linecap: round;
+                            stroke-miterlimit: 10;
+                            stroke-width: 3px;
+                        }
+                    </style>
+                </defs>
+                <title />
+                <circle class="cls-1" cx="32" cy="32" r="17" />
+                <line class="cls-2" x1="32" x2="32" y1="5" y2="11" />
+                <line class="cls-2" x1="32" x2="32" y1="53" y2="59" />
+                <line class="cls-2" x1="59" x2="53" y1="32" y2="32" />
+                <line class="cls-2" x1="11" x2="5" y1="32" y2="32" />
+                <line class="cls-2" x1="51.09" x2="46.85" y1="12.91" y2="17.15" />
+                <line class="cls-2" x1="17.15" x2="12.91" y1="46.85" y2="51.09" />
+                <line class="cls-2" x1="51.09" x2="46.85" y1="51.09" y2="46.85" />
+                <line class="cls-2" x1="17.15" x2="12.91" y1="17.15" y2="12.91" />
+            </svg>
+            
+                <p>24°</p>
+            
+            </div> <!-- .day .tuesday -->
+
+            <div class="day wednesday">
+                <p>Wednesday</p>
+            
+                <?xml version="1.0" ?><svg class="weather-icon" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #efcc00;
+                            }
+            
+                            .cls-2 {
+                                fill: none;
+                                stroke: #efcc00;
+                                stroke-linecap: round;
+                                stroke-miterlimit: 10;
+                                stroke-width: 3px;
+                            }
+                        </style>
+                    </defs>
+                    <title />
+                    <circle class="cls-1" cx="32" cy="32" r="17" />
+                    <line class="cls-2" x1="32" x2="32" y1="5" y2="11" />
+                    <line class="cls-2" x1="32" x2="32" y1="53" y2="59" />
+                    <line class="cls-2" x1="59" x2="53" y1="32" y2="32" />
+                    <line class="cls-2" x1="11" x2="5" y1="32" y2="32" />
+                    <line class="cls-2" x1="51.09" x2="46.85" y1="12.91" y2="17.15" />
+                    <line class="cls-2" x1="17.15" x2="12.91" y1="46.85" y2="51.09" />
+                    <line class="cls-2" x1="51.09" x2="46.85" y1="51.09" y2="46.85" />
+                    <line class="cls-2" x1="17.15" x2="12.91" y1="17.15" y2="12.91" />
+                </svg>
+            
+                <p>26°</p>
+            
+            </div> <!-- .day .wednesday -->
+
+        </div> <!-- .forecast -->
+
+        </div> <!-- .forecast-container -->
+
+    </div> <!-- .container -->
+
+    <small>Coded by <a href="https://www.github.com/brigittavarga" target="_blank">Brigitta Varga</a></small>
+
+<script src="https://kit.fontawesome.com/d1b0ce4ea9.js" crossorigin="anonymous"></script>
+</body>
+</html>
